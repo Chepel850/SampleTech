@@ -54,10 +54,5 @@ public class Collecting_R_Sample_Procedure : MonoBehaviour
         Second_Main_Bottle.transform.GetComponent<Collider>().enabled = true;
     }
 
-    public void End_Of_CRS()
-    {
-        
-            SceneManager.LoadScene("MainMenu3");
- 
-    }
+    
 }
