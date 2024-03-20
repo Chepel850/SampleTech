@@ -1886,7 +1886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: e18b333de8f0fa646ac10b2a4d48a5e9, type: 3}
+  m_Clip: {fileID: 8300000, guid: 7e6baf69ba950c1499eec2664ce550a3, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
@@ -2200,7 +2200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: b9c8f6e91f6ebda49bf429b0af5be925, type: 3}
+  m_Clip: {fileID: 8300000, guid: e78a768b411931a449523041ac7bb3bc, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
@@ -2994,7 +2994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 7f4c5ad19cdae2548bd5f808369cc51a, type: 3}
+  m_Clip: {fileID: 8300000, guid: 5275dfc52c4f4a149a83479ebc9b1cea, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
@@ -5437,7 +5437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 44e0ff3bfb5f4524ca6272b13d45d566, type: 3}
+  m_Clip: {fileID: 8300000, guid: ebc4a96960a09f04198a989123c7009a, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
