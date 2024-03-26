@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18259957, g: 0.22831085, b: 0.30717596, a: 1}
+  m_IndirectSpecularColor: {r: 0.18259986, g: 0.22831127, b: 0.3071771, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -67,9 +67,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -439,7 +436,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &256742202
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -453,6 +450,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -1729,7 +1727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 5dfeaff9b7c9fa640b1edb11ee48ae5f,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d19ac3f1c62eec54096bfa815cfed85a, type: 2}
     - target: {fileID: 919132149155446097, guid: 5dfeaff9b7c9fa640b1edb11ee48ae5f,
@@ -1947,7 +1945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 70ffc857213bc6e42b97e83a6a37f6ac,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 1f05876ea21dc224a89760cd1a5a8969, type: 2}
     - target: {fileID: 919132149155446097, guid: 70ffc857213bc6e42b97e83a6a37f6ac,
@@ -2068,7 +2066,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &552073894
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2082,6 +2080,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -4074,7 +4073,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: -0.000004055478, y: 0, z: 0}
 --- !u!95 &921538624
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4088,6 +4087,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -4374,7 +4374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 9ddfac486df69db41b539ff71449cfe9,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 60e4b40d510ed01429b3c42e6fa74841, type: 2}
     - target: {fileID: 919132149155446097, guid: 9ddfac486df69db41b539ff71449cfe9,
@@ -4836,7 +4836,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: aa7b83b496cf5e144be9196c74c950bd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0045
+      value: 0.0067
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa7b83b496cf5e144be9196c74c950bd,
         type: 3}
@@ -4900,7 +4900,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1102073872
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4914,6 +4914,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -5129,7 +5130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 5dfeaff9b7c9fa640b1edb11ee48ae5f,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d19ac3f1c62eec54096bfa815cfed85a, type: 2}
     - target: {fileID: 919132149155446097, guid: 5dfeaff9b7c9fa640b1edb11ee48ae5f,
@@ -5565,6 +5566,8 @@ PlayableDirector:
     value: {fileID: 1390882258}
   - key: {fileID: -3424040010334392820, guid: 554ac4de6c3d0834fb6552793bdaf2cf, type: 2}
     value: {fileID: 921538625}
+  - key: {fileID: -4023950451298798490, guid: 554ac4de6c3d0834fb6552793bdaf2cf, type: 2}
+    value: {fileID: 1102073872}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1390882257
@@ -5859,7 +5862,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1426877397
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5873,6 +5876,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -7435,7 +7439,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1536891985
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7449,6 +7453,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -8893,7 +8898,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &1733311657
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8907,6 +8912,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -10201,7 +10207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 9b49d7911fd1e514798dd4a800810ebc,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: fb05b26d61299064a9c58c766cbd7097, type: 2}
     - target: {fileID: 919132149155446097, guid: 9b49d7911fd1e514798dd4a800810ebc,
@@ -10277,6 +10283,7 @@ Terrain:
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
+  m_HeightmapMinimumLODSimplification: 0
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
@@ -10373,7 +10380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 5dfeaff9b7c9fa640b1edb11ee48ae5f,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d19ac3f1c62eec54096bfa815cfed85a, type: 2}
     - target: {fileID: 919132149155446097, guid: 5dfeaff9b7c9fa640b1edb11ee48ae5f,
@@ -10881,7 +10888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 5dfeaff9b7c9fa640b1edb11ee48ae5f,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d19ac3f1c62eec54096bfa815cfed85a, type: 2}
     - target: {fileID: 919132149155446097, guid: 5dfeaff9b7c9fa640b1edb11ee48ae5f,
