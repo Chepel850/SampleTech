@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 241852d3eb143c34dbe6db075ac9a925
+guid: 81fc4fe534239f04ab26276affd91b44
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sink_Counter_Mat
+    second: {fileID: 2100000, guid: 78434aff7a8ac7d4e889f9ff6332063c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sink_Mat
+    second: {fileID: 2100000, guid: f542bb6d602a91a4493957091b1fe89e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -16,8 +26,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
