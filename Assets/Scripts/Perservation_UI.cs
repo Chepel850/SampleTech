@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Timeline;
 using UnityEngine.Playables;
+using System;
 
 public class Perservation_UI : MonoBehaviour
 {
@@ -31,10 +32,15 @@ public class Perservation_UI : MonoBehaviour
     private bool H2SO4_Check = false;
     private bool None_Check = false;
 
+    public Color specificColor;
+    public Color Normal_original;
+
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+       
+
     }
 
     // Update is called once per frame
@@ -45,9 +51,27 @@ public class Perservation_UI : MonoBehaviour
 
     public void copper_True()
     {
-        HNO3_Check = true;
+        ColorBlock cb = HNO3.colors;
+
+        ColorBlock OG = HNO3.colors;
+
+        OG.selectedColor = Normal_original;
+
+        cb.selectedColor = specificColor;
+
+        HNO3_Check = !HNO3_Check;
         Debug.Log("The button for copper has been pressed");
 
+        if (HNO3_Check == true)
+        {
+            HNO3.colors = cb;
+
+        }
+        else
+        {
+            HNO3.colors = OG;
+            Debug.Log("Something did not happen"); 
+        }
     }
     public void BOD_True()
     {
