@@ -548,6 +548,22 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events: []
+--- !u!114 &-7970901994052380626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 156.6812244897959
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: b59e54d1306a49244bd4748667c4a733, type: 2}
 --- !u!74 &-7311542907381826184
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -919,6 +935,22 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events: []
+--- !u!114 &-7182594469037078335
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 90.5
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: b605c462359ee3e47a221f56add367d0, type: 2}
 --- !u!114 &-6902851088139649408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1088,7 +1120,7 @@ MonoBehaviour:
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
-    m_BlendOutDuration: 1.000000000000398
+    m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -1115,25 +1147,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1148,7 +1162,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Preservation_Holding_Time_Doc_3
   - m_Version: 1
-    m_Start: 148.10571428571387
+    m_Start: 149.10571428571427
     m_ClipIn: 0
     m_Asset: {fileID: 88833496451732538}
     m_Duration: 7.575510204081633
@@ -1156,7 +1170,7 @@ MonoBehaviour:
     m_ParentTrack: {fileID: -6902851088139649408}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 1.000000000000398
+    m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
@@ -1226,6 +1240,22 @@ MonoBehaviour:
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
+--- !u!114 &-6719462121068313964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 95.5
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: b605c462359ee3e47a221f56add367d0, type: 2}
 --- !u!114 &-6066172641805229172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2307,7 +2337,7 @@ MonoBehaviour:
   m_Time: 104
   m_Retroactive: 0
   m_EmitOnce: 0
-  m_Asset: {fileID: 0}
+  m_Asset: {fileID: 11400000, guid: 2a5e9af4523feed488885ee2e9451af6, type: 2}
 --- !u!114 &-3881362356248250012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3117,6 +3147,22 @@ MonoBehaviour:
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
+--- !u!114 &-1310111275934066040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 80
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: b605c462359ee3e47a221f56add367d0, type: 2}
 --- !u!114 &-1165923471902600596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4973,6 +5019,7 @@ MonoBehaviour:
   m_Tracks:
   - {fileID: 1055210430602382099}
   - {fileID: 1164492515955785935}
+  - {fileID: 3938878645894050868}
   - {fileID: -6902851088139649408}
   - {fileID: 836331291006817637}
   - {fileID: -5297032005683617689}
@@ -5504,7 +5551,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 80
-    m_DisplayName: Recorded (13)
+    m_DisplayName: Main_Camera_animations_For_Bottle3s
   m_Markers:
     m_Objects: []
   m_InfiniteClipPreExtrapolation: 1
@@ -5687,7 +5734,7 @@ MonoBehaviour:
   m_Time: 102
   m_Retroactive: 0
   m_EmitOnce: 0
-  m_Asset: {fileID: 0}
+  m_Asset: {fileID: 11400000, guid: 2a5e9af4523feed488885ee2e9451af6, type: 2}
 --- !u!74 &2449852434368248085
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -6916,6 +6963,33 @@ MonoBehaviour:
   m_bufferingTime: 0.1
   m_ClipProperties:
     volume: 1
+--- !u!114 &3938878645894050868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46e36075dd1c124a8422c228e75e1fb, type: 3}
+  m_Name: Signal Track (2)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects:
+    - {fileID: -7182594469037078335}
+    - {fileID: -6719462121068313964}
+    - {fileID: -7970901994052380626}
+    - {fileID: -1310111275934066040}
 --- !u!74 &3962649145630308894
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -7966,7 +8040,7 @@ MonoBehaviour:
   m_Time: 102
   m_Retroactive: 0
   m_EmitOnce: 0
-  m_Asset: {fileID: 0}
+  m_Asset: {fileID: 11400000, guid: 78d987805690742488595bdaf6aaa5b3, type: 2}
 --- !u!74 &5881147178590351067
 AnimationClip:
   m_ObjectHideFlags: 0
