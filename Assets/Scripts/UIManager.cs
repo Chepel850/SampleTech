@@ -10,12 +10,16 @@ using System.Collections.Generic;
 using UnityEditor;
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
+using DG.Tweening;
+using System;
 
 
 
 public class UIManager : MonoBehaviour
 {
     public TextMeshProUGUI simText;
+
+    public TextMeshProUGUI Big_text_Sim;
 
     //public Slider textSlider;
 
@@ -62,14 +66,13 @@ public class UIManager : MonoBehaviour
     public bool M_Menu = false;
     public bool sound_Mute = false;
 
-    //Back button 
+    //Back button -------------------------------------------------------------
 
     public GameObject[] Object_sequence;
 
     public double[] Timeline_Checkpoints;
 
     public int Object_num = 0;
-
     public int Skip_Button_Num = 0;
 
     public int OBJ_Max;
@@ -77,24 +80,62 @@ public class UIManager : MonoBehaviour
 
     public int TL_Max;
     public int TL_Min;
+    //-------------------------------------------------
 
-
+    //-------------------------------------------------
     private int Font_Counter = 0;
+    //-----------------------------------------------------------------------------
+
+    [SerializeField] RectTransform Text_Frame, Small_Box_Tool, TB_Position, Text_Box;
+
+    [SerializeField] GameObject Small_text;
+    [SerializeField] GameObject Big_Text;
+
+    private float anim_Length = 1;
+
+    public bool Close_Captioning = false;
+
+    public Vector2 Original_Small_Tool_UI;
+    public Vector2 Tool_UI_Top_location;
+
+    public Vector2 Text_Frame_location;
+    public Vector2 Text_Frame_top_location;
+
+    /*public Vector2 Text_Box_Original_location;
+    public Vector2 Text_Box_Top_location;*/
+
+    [SerializeField]
+    GameObject Foward_Dummy;
+    [SerializeField]
+    GameObject Back_Skip_Dummy;
+
+    public string EARTH_WEB;
 
     void Start()
     {
         OBJ_Max = Object_sequence.Length - 1;
         OBJ_Min = 0;
-
+        //----------------------------------------------
         TL_Max = Timeline_Checkpoints.Length - 1;
         TL_Min = 0;
-
+        //----------------------------------------------
         Debug.Log("Number of checkpoints is " + TL_Max);
 
         Debug.Log("number of objects selected is " + OBJ_Max);
 
-       
+        //-------------------------------------------------------------------
+        Original_Small_Tool_UI = Small_Box_Tool.transform.localPosition;
 
+        Tool_UI_Top_location = TB_Position.transform.localPosition;
+        //-----------------------------------------------------------------------------
+        Text_Frame_location = new Vector2(1,(float) 0.125127316);
+
+        Text_Frame_top_location = new Vector2(1, (float)0.2318369);
+
+        /*if (Object_sequence == null)
+        {
+            Debug.Log("Object sequence is null set in editor");
+        }*/
     }
 
 
@@ -102,10 +143,37 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         //timeline.time == episodestartime 
-       // if current time == endtime { increment bject++ Tl++
+        // if current time == endtime { increment bject++ Tl++
+
     }
 
+    public void Close_Captioning_Button()
+    {
+        Close_Captioning = !Close_Captioning;
 
+        if (Close_Captioning == true)
+        {
+            Small_Box_Tool.DOLocalMove(Tool_UI_Top_location, anim_Length);
+            Text_Frame.DOAnchorMax(Text_Frame_top_location, anim_Length);
+
+
+            Small_text.SetActive(false);
+            Big_Text.SetActive(true);
+        }
+        else
+        {
+            Small_Box_Tool.DOLocalMove(Original_Small_Tool_UI, anim_Length); 
+            Text_Frame.DOAnchorMax(Text_Frame_location, anim_Length);
+
+            Small_text.SetActive(true);
+            Big_Text.SetActive(false);
+        }
+
+        /*
+         * Vector2(1,0.125127316)
+         * Vector2(1,0.2318369)
+         * */
+    }
     public void Disable_Foward_Skip()
     {
         if (Skip_Button_Num == TL_Max)
@@ -160,14 +228,17 @@ public class UIManager : MonoBehaviour
         if (Font_Counter == 0)
         {
             simText.fontSize = 12;
+            Big_text_Sim.fontSize = 15;
         }
         else if (Font_Counter == 1)
         {
             simText.fontSize = 20;
+            Big_text_Sim.fontSize = 24;
         }
         else
         {
             simText.fontSize = 24;
+            Big_text_Sim.fontSize = 36;
         }
 
 
@@ -240,6 +311,10 @@ public class UIManager : MonoBehaviour
 
     }
 
+    public void Home_Button()
+    {
+        Application.OpenURL(EARTH_WEB);
+    }
 
 
     public void Skip_Foward()
@@ -303,5 +378,30 @@ public class UIManager : MonoBehaviour
                 Object_num = OBJ_Min;
             }
 
+    }
+
+    public void Skip_Activation()
+    {
+        Foward_Button.transform.GetComponent<Button>().interactable = true;
+
+        Back_Button.transform.GetComponent<Button>().interactable = true;
+
+        Foward_Button.SetActive(true);
+
+        Back_Button.SetActive(true);
+
+        Foward_Dummy.SetActive(false);
+
+        Back_Skip_Dummy.SetActive(false);
+    }
+
+    public void Play_Deactivation()
+    {
+        Play_Button.GetComponent<Button>().interactable = false;
+    }
+    public void Play_Activation()
+    {
+
+        Play_Button.GetComponent<Button>().interactable = true;
     }
 }

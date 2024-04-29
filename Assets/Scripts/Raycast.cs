@@ -77,6 +77,11 @@ public class Raycast : MonoBehaviour
 
     }
 
+    public void Timeline_Pause()
+    {
+        Sample_Tech_Timeline.playableGraph.GetRootPlayable(0).SetSpeed(0);
+    }
+
     public void End_Of_Scene()
     {
 
