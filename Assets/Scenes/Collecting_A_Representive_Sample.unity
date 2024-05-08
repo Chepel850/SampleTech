@@ -752,6 +752,7 @@ GameObject:
   - component: {fileID: 518560792}
   - component: {fileID: 518560794}
   - component: {fileID: 518560795}
+  - component: {fileID: 518560796}
   m_Layer: 0
   m_Name: EventSystem_TL
   m_TagString: MainCamera
@@ -797,6 +798,10 @@ PlayableDirector:
   - key: {fileID: 2348787568790717226, guid: 1e425fcc4ef1d384fb02eb539245705d, type: 2}
     value: {fileID: 852617894}
   - key: {fileID: -4407008063509904091, guid: 1e425fcc4ef1d384fb02eb539245705d, type: 2}
+    value: {fileID: 1268649265}
+  - key: {fileID: -8258217144936280479, guid: 1e425fcc4ef1d384fb02eb539245705d, type: 2}
+    value: {fileID: 1268649265}
+  - key: {fileID: -6455099388729138568, guid: 1e425fcc4ef1d384fb02eb539245705d, type: 2}
     value: {fileID: 1268649265}
   m_ExposedReferences:
     m_References: []
@@ -906,6 +911,179 @@ MonoBehaviour:
   First_Main_Bottle: {fileID: 684063679}
   Second_Bottle: {fileID: 1414334260}
   Second_Main_Bottle: {fileID: 1414334262}
+--- !u!114 &518560796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518560791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a443d0e548f7ae343b528a54abe839c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Big_Text: {fileID: 1268649267}
+  Small_Text: {fileID: 924162019}
+  Large_Dialog_Box:
+  - Collecting a representative sample should be the first goal in any sampling event.
+    Selection of a good sampling point involves both location and timing.
+  - "Facility permits often mandate a sampling location, for example \u201COutfall
+    01\u201D or \u201CLagoon\u201D, but considerations for the specific sampling
+    spot within that location, and timing for the sample collection still apply."
+  - " Click on the highlighted bottle to take an initial sample from the stream.
+    \r"
+  - "Here are a few things to keep in mind, the sampling location should be a well-mixed
+    area typical of the body of water or tank. \r\nBe sure that samples collected
+    on a routine basis are always taken from the same location.\r"
+  - Click on the first sample bottle once more to close it.
+  - 'Now click on the second sample bottle to take a second sample from the stream. '
+  - Wastewater flows into your facility can vary widely in quantity and composition
+    over a 24 hour period. In most cases, routine sample collection should be timed
+    to get a usual weekday flow and composition.
+  - Click on the second sample bottle again to close it.
+  - Congratulations, you have correctly followed the guidelines for taking a representative
+    sample.
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  dialog_Checkpoints:
+  - 0
+  - 8.5
+  - 8.8
+  - 21
+  - 21.5
+  - 25.1
+  - 25.2
+  - 37.3
+  - 37.5
+  - 40.1
+  - 42.5
+  - 46.6
+  - 46.8
+  - 59.2
+  - 59.7
+  - 62.5
+  - 65
+  - 70
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Small_Dialog_Box:
+  - Click on the first sample bottle
+  - Click on the highlighted bottle.
+  - Click on the second sample bottle
+  - Click on the highlighted bottle.
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Small_Text_Checkpoints:
+  - 21.5
+  - 25.1
+  - 37.5
+  - 40.1
+  - 42.5
+  - 46.6
+  - 59.5
+  - 62.6
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Text_Counter: 0
+  Scene_Timeline: {fileID: 518560792}
 --- !u!1 &634934573 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1112650216497154240, guid: 331ed49b887952e4781a280f919293bd,
@@ -3627,6 +3805,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &924162019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3216605984777905139, guid: 331ed49b887952e4781a280f919293bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1268649264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &954069451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4940,6 +5124,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 785065422429193386, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1112650216497154240, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Name
@@ -5048,12 +5237,12 @@ PrefabInstance:
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Signals.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
@@ -5069,12 +5258,34 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: 'm_Events.m_Signals.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0d99e8b7cbecc8b43a55b0b181c25e09,
+        type: 2}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'm_Events.m_Signals.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 9a8135cb4e9055543a29da9b254d5486,
+        type: 2}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[4].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
@@ -5089,12 +5300,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1268649266}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1268649266}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1268649266}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1268649266}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
@@ -5109,6 +5340,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Disable_Back_Skip
       objectReference: {fileID: 0}
@@ -5116,6 +5357,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Disable_Foward_Skip
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Skip_Activation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: END_Of_Scene
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
@@ -5129,6 +5380,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -5136,6 +5397,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4846332865642819814, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
@@ -5285,6 +5561,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430152b064a2a1b4eaccbff0745dc0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1268649267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2459484185778679755, guid: 331ed49b887952e4781a280f919293bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1268649264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1305730147
 GameObject:
   m_ObjectHideFlags: 0

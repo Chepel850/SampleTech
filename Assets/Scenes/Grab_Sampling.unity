@@ -2109,6 +2109,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sample_Jar_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5585874304376721046, guid: aa7b83b496cf5e144be9196c74c950bd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585874304376721046, guid: aa7b83b496cf5e144be9196c74c950bd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2125,6 +2135,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 552073896}
+    - targetCorrespondingSourceObject: {fileID: 1020766274132676693, guid: aa7b83b496cf5e144be9196c74c950bd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 552073898}
   m_SourcePrefab: {fileID: 100100000, guid: aa7b83b496cf5e144be9196c74c950bd, type: 3}
 --- !u!1 &552073893 stripped
 GameObject:
@@ -3277,6 +3291,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0010311715, y: 0.0009102629, z: 0.0017270453}
   m_Center: {x: -0.00004113592, y: -0.000008799248, z: 0.0008416259}
+--- !u!1 &552073897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1020766274132676693, guid: aa7b83b496cf5e144be9196c74c950bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 552073892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &552073898
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552073897}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &603204364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6610,11 +6652,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.001
       objectReference: {fileID: 0}
+    - target: {fileID: -536557003506250738, guid: 9fceda1ae3e6a9a4b879e6d1efae988a,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 011639af4d29c404791363183ab39755, type: 2}
     - target: {fileID: 919132149155446097, guid: 9fceda1ae3e6a9a4b879e6d1efae988a,
         type: 3}
       propertyPath: m_Name
       value: Bucket_With_animation (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2126699680734633660, guid: 9fceda1ae3e6a9a4b879e6d1efae988a,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d19ac3f1c62eec54096bfa815cfed85a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -7133,6 +7185,7 @@ GameObject:
   - component: {fileID: 1390882256}
   - component: {fileID: 1390882258}
   - component: {fileID: 1390882259}
+  - component: {fileID: 1390882260}
   m_Layer: 0
   m_Name: EventSystem_TL
   m_TagString: Untagged
@@ -7187,6 +7240,10 @@ PlayableDirector:
     value: {fileID: 719290757}
   - key: {fileID: 6405082451458370931, guid: 554ac4de6c3d0834fb6552793bdaf2cf, type: 2}
     value: {fileID: 1730068849}
+  - key: {fileID: 4772662982313169951, guid: 554ac4de6c3d0834fb6552793bdaf2cf, type: 2}
+    value: {fileID: 552073898}
+  - key: {fileID: 8538252968988214968, guid: 554ac4de6c3d0834fb6552793bdaf2cf, type: 2}
+    value: {fileID: 1733311661}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1390882257
@@ -7223,6 +7280,13 @@ MonoBehaviour:
     - {fileID: 11400000, guid: d84abc69b575ac349aa4e73b3004c6b8, type: 2}
     - {fileID: 11400000, guid: 519260e847f129a4ab7a11439f3dc550, type: 2}
     - {fileID: 11400000, guid: 9936a2d6823eef74f9bdcf33ef274bae, type: 2}
+    - {fileID: 11400000, guid: adaf885553fde44408fdeddccc672ad4, type: 2}
+    - {fileID: 11400000, guid: 5f0e1027774a25141a508b7e49dd6f0b, type: 2}
+    - {fileID: 11400000, guid: f14baceb602db4f479e86dd2fed1b3d2, type: 2}
+    - {fileID: 11400000, guid: 164eaf240eca7c74f9146102c3362ed1, type: 2}
+    - {fileID: 11400000, guid: 1b47a633d6529ec4ba153db1887bffe8, type: 2}
+    - {fileID: 11400000, guid: 61ce58dec8504df48b440bdcf767d586, type: 2}
+    - {fileID: 11400000, guid: b1b64b05dee44c740bf6ebea7393c461, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -7294,6 +7358,104 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1390882259}
+          m_TargetAssemblyTypeName: Grab_Sampling_Procedure, Assembly-CSharp
+          m_MethodName: First_Bottle_Highlight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1390882259}
+          m_TargetAssemblyTypeName: Grab_Sampling_Procedure, Assembly-CSharp
+          m_MethodName: Perservative_Bottle_Highlight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1390882259}
+          m_TargetAssemblyTypeName: Grab_Sampling_Procedure, Assembly-CSharp
+          m_MethodName: Fourth_Bottle_Highlight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1390882259}
+          m_TargetAssemblyTypeName: Grab_Sampling_Procedure, Assembly-CSharp
+          m_MethodName: Cooler_Highlight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1390882259}
+          m_TargetAssemblyTypeName: Grab_Sampling_Procedure, Assembly-CSharp
+          m_MethodName: Second_Bottle_Highlight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1390882259}
+          m_TargetAssemblyTypeName: Grab_Sampling_Procedure, Assembly-CSharp
+          m_MethodName: Bucket_Highlight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1390882259}
+          m_TargetAssemblyTypeName: Grab_Sampling_Procedure, Assembly-CSharp
+          m_MethodName: Thrid_Bottle_Highlight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1390882259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7309,8 +7471,214 @@ MonoBehaviour:
   Sample_Bottle_1: {fileID: 1426877396}
   Sample_Bottle_2: {fileID: 552073893}
   Sample_Bottle_3: {fileID: 1733311656}
-  Cooler: {fileID: 256742203}
+  Sample_Bottle_4: {fileID: 719290752}
+  Sample_Collector: {fileID: 1536891984}
   Perserve_Bottle: {fileID: 603204365}
+  Bucket: {fileID: 1131194919}
+--- !u!114 &1390882260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390882255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a443d0e548f7ae343b528a54abe839c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Big_Text: {fileID: 1730068852}
+  Small_Text: {fileID: 1730068851}
+  Large_Dialog_Box:
+  - "This module showcases two different methods for collecting water and wastewater
+    samples. An operator can collect either a grab sample or a composite sample.
+    The type of sample depends on what analysis will be performed on the sample,
+    and the requirements of your facility\u2019s operating permit."
+  - Remember that accurate laboratory results provide information to keep your plant
+    running in optimal condition. Always start collection with proper sampling techniques.
+  - "Consult your facility\u2019s NPDES permit, industry references such as \u201CStandard
+    Methods for the Examination of Water and Wastewater,\u201D and your laboratory\u2019s
+    Standard Operating Procedures to determine whether the sample you collect should
+    be a grab sample or a composite sample. "
+  - These references also specify the type of sample bottle to use, whether the sample
+    needs to be preserved immediately after collection, and how long the sample can
+    be held before analysis takes place.
+  - "Let\u2019s get started by learning how to collect a grab sample. \r"
+  - "A grab sample is a single sample collected at one particular time and place.
+    The grab sample provides a snapshot of the characteristics of the water only
+    at the specific location and for the instant that it\u2019s collected. It\u2019s
+    not representative of the entire flow or the entire 24 hours of plant operation."
+  - "Grab samples can be collected from a variety of locations including streams,
+    lakes, lagoons, wells, process tanks, service pipes and household faucets. Preferably,
+    grab samples should be collected directly into the sample bottle, but only if
+    the bottle doesn\u2019t contain preservative."
+  - " If there\u2019s an issue accessing the water source directly, use a dip sampler,
+    bucket on a rope, or other clean device to collect the sample and transfer it
+    to the sample bottle. No matter how you collect the grab sample, be sure to protect
+    yourself by wearing gloves and other appropriate protective equipment. \r\n"
+  - "For this demonstration, we\u2019ll collect a grab sample from a creek."
+  - To begin, click the first sample bottle to remove its cap.
+  - Take care not to contaminate the inside of the bottle or the lid with your fingers
+    or anything in the surrounding environment.
+  - Click the bottle again to take a sample from the creek.
+  - Take care to leave an air space at the top to allow for mixing.
+  - Next, add the appropriate preservative to the sample. The need for preservative
+    depends on what analysis will be performed on the sample. In this case, a preservative
+    will be required. You can choose this by clicking on the preservative bottle.
+  - Click the sample bottle once more to put the cap back on.
+  - 'Click on the sample bottle again to invert it several times. This will mix the
+    preservative with the sample. '
+  - Click on the sample bottle to label it with the date, time, location, sample
+    collector, and analysis parameters.
+  - Click on the sample bottle one last time to place it in a cooler until it is
+    returned to the lab for analysis.
+  - Repeat this process this time using a dipper and a bucket in order to collect
+    additional samples from the creek.
+  - Click on the dipper.
+  - Click on the sample bottle.
+  - Click on the bucket.
+  - Click on the sample bottle.
+  - "Excellent! You\u2019ve completed the tutorial. In the next chapter, you\u2019ll
+    review the grab sample procedures."
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  dialog_Checkpoints:
+  - 0
+  - 16
+  - 16.5
+  - 25
+  - 25.2
+  - 40.3
+  - 40.6
+  - 51.5
+  - 52
+  - 54.8
+  - 55
+  - 72.3
+  - 72.75
+  - 89.3
+  - 89.75
+  - 105.6
+  - 106
+  - 109.2
+  - 109.5
+  - 113.1
+  - 113.5
+  - 119.4
+  - 119.6
+  - 122.1
+  - 122.3
+  - 125.4
+  - 125.6
+  - 138.8
+  - 141.75
+  - 144.8
+  - 145
+  - 150.3
+  - 150.75
+  - 157.75
+  - 158
+  - 163.8
+  - 163.9
+  - 170.1
+  - 179
+  - 181.1
+  - 194.5
+  - 196.6
+  - 219.5
+  - 221.5
+  - 235
+  - 241
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Small_Dialog_Box:
+  - Click sample bottle.
+  - Click sample bottle.
+  - Click on the perservative.
+  - Click on the sample bottle.
+  - CLick on the sample bottle.
+  - Click on the sample bottle.
+  - Click on the sample bottle.
+  - Click on the dipper.
+  - Click on the sample bottle.
+  - Click on the bucket.
+  - Click on the sample bottle.
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Small_Text_Checkpoints:
+  - 110.5
+  - 113.1
+  - 119.5
+  - 122.1
+  - 136
+  - 138.8
+  - 142
+  - 144.8
+  - 145
+  - 148.1
+  - 150.6
+  - 157.8
+  - 158
+  - 163.8
+  - 168.5
+  - 170.1
+  - 179
+  - 181.1
+  - 194.5
+  - 196.6
+  - 219.5
+  - 221.6
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Text_Counter: 0
+  Scene_Timeline: {fileID: 1390882256}
 --- !u!1001 &1398488737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10591,12 +10959,12 @@ PrefabInstance:
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Signals.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
@@ -10612,12 +10980,23 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: 'm_Events.m_Signals.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 9a8135cb4e9055543a29da9b254d5486,
+        type: 2}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
@@ -10632,12 +11011,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1730068850}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1730068850}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1730068850}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
@@ -10652,6 +11041,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Disable_Back_Skip
       objectReference: {fileID: 0}
@@ -10659,6 +11053,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Disable_Foward_Skip
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: END_Of_Scene
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
@@ -10672,12 +11071,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10709,6 +11118,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430152b064a2a1b4eaccbff0745dc0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1730068851 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3216605984777905139, guid: 331ed49b887952e4781a280f919293bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1730068848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1730068852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2459484185778679755, guid: 331ed49b887952e4781a280f919293bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1730068848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1733311655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10770,7 +11191,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: aa7b83b496cf5e144be9196c74c950bd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa7b83b496cf5e144be9196c74c950bd,
         type: 3}
@@ -10803,6 +11224,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1733311659}
+    - targetCorrespondingSourceObject: {fileID: 1020766274132676693, guid: aa7b83b496cf5e144be9196c74c950bd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1733311661}
   m_SourcePrefab: {fileID: 100100000, guid: aa7b83b496cf5e144be9196c74c950bd, type: 3}
 --- !u!1 &1733311656 stripped
 GameObject:
@@ -11955,6 +12380,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0010723167, y: 0.0010723271, z: 0.0017131061}
   m_Center: {x: -0.0000205734, y: -0.000020570755, z: 0.0008346583}
+--- !u!1 &1733311660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1020766274132676693, guid: aa7b83b496cf5e144be9196c74c950bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1733311655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1733311661
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733311660}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1738259819
 GameObject:
   m_ObjectHideFlags: 0

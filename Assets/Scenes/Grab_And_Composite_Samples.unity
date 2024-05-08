@@ -945,6 +945,7 @@ GameObject:
   - component: {fileID: 423713668}
   - component: {fileID: 423713670}
   - component: {fileID: 423713671}
+  - component: {fileID: 423713672}
   m_Layer: 0
   m_Name: EvenSystem_TL
   m_TagString: Untagged
@@ -1160,6 +1161,151 @@ MonoBehaviour:
   Other_Bottle2: {fileID: 1985465071}
   Cooler: {fileID: 1501554319}
   Other_Bottle3: {fileID: 1357225363}
+--- !u!114 &423713672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423713667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a443d0e548f7ae343b528a54abe839c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Big_Text: {fileID: 1099388811729520957}
+  Small_Text: {fileID: 1099388811729520956}
+  Large_Dialog_Box:
+  - Regulatory permits for a facility often specify collection of a grab sample or
+    a composite sample. Grab samples provide snapshot information, while composite
+    samples provide cumulative or average information about water and wastewater
+    quality.
+  - "Water and wastewater operators collect both grab and composite samples to monitor
+    conditions at their facility. \r\n"
+  - A grab sample is a single sample collected at one point during one moment in
+    time. Analysis results from a grab sample show the characteristics of the water
+    or wastewater only at the particular sampling point, and only at the instant
+    that the sample was collected.
+  - Grab samples are always collected for parameters such as dissolved oxygen coliform
+    bacteria, pH, temperature, and residual chlorine because analysis for these water
+    quality indictors must take place immediately.
+  - "Grab samples can also be collected to provide a snapshot look at other parameters
+    of interest such as the Chromium content of the wastewater being discharged at
+    10 am on Wednesday, or the solids content of the primary clarifier at 4 pm. \r\n"
+  - Please click on the highlighted sample bottles to learn about composite samples.
+  - A composite sample is a series of samples collected from one sampling point at
+    various intervals throughout the day, and then combined into one sample for analysis.
+  - "A composite sample can also be a series of samples collected from many locations
+    throughout a sampling area, for instance throughout a lagoon, and then combined
+    into one sample for analysis. \r"
+  - In a simple composite sample, equal amounts of sample are collected at each interval.
+    In a flow-weighted composite sample, the amount of sample collected at each interval
+    may vary based on the amount of flow during that interval.
+  - ' In a time-weighted composite sample, the interval of sample collection may
+    vary based on the time it takes to reach a certain flow into the facility. All
+    samples for a composite sampling event must be kept cool during the entire collection
+    event, and remixed just prior to combining them into the final composite sample.'
+  - Click on the cooler now to remix and combine the samples we have just taken.
+  - Now please click on the composite sample bottle to the left of the cooler to
+    learn about the procedures that should be followed once you have the composite
+    sample.
+  - Once the several singular samples taken for a composite sampling event are combined
+    in the composite sample bottle, the bottle itself should also be shaken to once
+    again remix its contents before analysis.
+  - 
+  - 
+  - 
+  dialog_Checkpoints:
+  - 0
+  - 14.5
+  - 15
+  - 21
+  - 21.5
+  - 35.8
+  - 36.2
+  - 48.5
+  - 49
+  - 62
+  - 62.5
+  - 66.8
+  - 67
+  - 75.8
+  - 76
+  - 86.8
+  - 87
+  - 98.5
+  - 99
+  - 116
+  - 116.5
+  - 120.1
+  - 120.3
+  - 127.8
+  - 128
+  - 139.5
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Small_Dialog_Box:
+  - Click on one of the highlighted bottles
+  - Click on the cooler
+  - Click on the composite sample bottle
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Small_Text_Checkpoints:
+  - 62.5
+  - 66.9
+  - 116.5
+  - 120.1
+  - 121
+  - 128
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  Text_Counter: 0
+  Scene_Timeline: {fileID: 423713668}
 --- !u!1 &452456766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,7 +1449,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453971478}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &453971482
 Camera:
   m_ObjectHideFlags: 0
@@ -18374,12 +18520,12 @@ PrefabInstance:
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Signals.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
@@ -18395,12 +18541,23 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: 'm_Events.m_Signals.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 9a8135cb4e9055543a29da9b254d5486,
+        type: 2}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
@@ -18415,12 +18572,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1099388811729520955}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1099388811729520955}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1099388811729520955}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
@@ -18435,6 +18602,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Disable_Back_Skip
       objectReference: {fileID: 0}
@@ -18442,6 +18614,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Disable_Foward_Skip
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: END_Of_Scene
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
@@ -18455,6 +18632,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -18462,6 +18644,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495352062129089617, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5422359345245996449, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
@@ -18557,6 +18754,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430152b064a2a1b4eaccbff0745dc0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1099388811729520956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3216605984777905139, guid: 331ed49b887952e4781a280f919293bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1099388811729520953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1099388811729520957 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2459484185778679755, guid: 331ed49b887952e4781a280f919293bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1099388811729520953}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -931,7 +931,7 @@ PlayableDirector:
   - key: {fileID: -7040783815693347960, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
     value: {fileID: 289571383}
   - key: {fileID: 3877755247442103391, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
-    value: {fileID: 356916666}
+    value: {fileID: 1137094068}
   - key: {fileID: -1453469658234450702, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
     value: {fileID: 892684897}
   - key: {fileID: -2526413275060326398, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
@@ -944,12 +944,12 @@ PlayableDirector:
     value: {fileID: 1398539578}
   - key: {fileID: -834677468317233725, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
     value: {fileID: 1137094068}
-  - key: {fileID: -5108084898257056962, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
-    value: {fileID: 356916666}
   - key: {fileID: -4346020080793950583, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
     value: {fileID: 356916666}
   - key: {fileID: -5947337231777017327, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
     value: {fileID: 1137094068}
+  - key: {fileID: -1148664546043735054, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
+    value: {fileID: 356916666}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &356916664
@@ -1189,20 +1189,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a443d0e548f7ae343b528a54abe839c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coll_Sub: 
-  UN_Coll_Sub: 
   Big_Text: {fileID: 1137094070}
-  Small_Text: {fileID: 1137094071}
+  Small_Text: {fileID: 1381446707}
   Large_Dialog_Box:
   - Collecting your sample into the proper bottle type is another important aspect
     of good sampling protocol.
-  - "Your laboratory can provide the proper sample bottles for the analyses that
-    you request. Another way to determine proper bottle type is to consult the US
-    EPA\u2019s \u201CMethods for Chemical Analyses of Water and Wastes\u201D or \u201CStandard
-    Methods for the Examination of Water and Wastewater"
+  - Your laboratory can provide the proper sample bottles for the analyses that you
+    request.
+  - "Another way to determine proper bottle type is to consult the US EPA\u2019s
+    \u201CMethods for Chemical Analyses of Water and Wastes\u201D or \u201CStandard
+    Methods for the Examination of Water and Wastewater."
   - Each of these references has tables showing bottle type, amount of sample required,
     preservation requirements, and holding time for each analysis parameter.
-  - Click on the amber bottle to learn more about it
+  - Click on the amber bottle to learn more about it.
   - Amber bottles are required to protect samples that could be degraded by sunlight.
     Amber bottles may be either glass or plastic.
   - Click on the plastic bottle to learn more about it
@@ -1222,17 +1221,155 @@ MonoBehaviour:
   - When selecting sampling bottles, be sure to consider the size of the bottle needed
     to ensure that you collect a large enough sample for the analyses needed.
   - Remember that no matter what type of bottle is needed for your analysis, it is
-    important to always start with clean bottles and sampling equipment, avoid contaminating
-    the bottle cap as you are collecting the sample, and to protect yourself with
-    the proper personal protective equipment.
+    important to always start with clean bottles and sampling equipment.
+  - Avoid contaminating the bottle cap as you are collecting the sample, and to protect
+    yourself with the proper personal protective equipment.
   - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  dialog_Checkpoints:
+  - 0
+  - 5.33
+  - 5.5
+  - 10
+  - 10.3
+  - 21.5
+  - 21.7
+  - 30.3
+  - 30.4
+  - 33.2
+  - 33.5
+  - 40.1
+  - 40.3
+  - 43.1
+  - 43.3
+  - 47
+  - 47.5
+  - 57.5
+  - 58
+  - 63
+  - 63.17
+  - 65.7
+  - 65.83
+  - 69.3
+  - 69.7
+  - 76.8
+  - 77
+  - 86
+  - 86.17
+  - 94
+  - 94.3
+  - 101.8
+  - 102
+  - 109
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   Small_Dialog_Box:
   - Click on the amber bottle
   - Click on the plastic bottle
   - Click on the glass bottle
   - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Small_Text_Checkpoints:
+  - 30.3
+  - 33.1
+  - 40.3
+  - 43.1
+  - 63.1
+  - 65.6
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   Text_Counter: 0
-  Small_Text_Count: 0
+  Scene_Timeline: {fileID: 356916663}
 --- !u!1001 &450178026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18893,8 +19030,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 0
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.19877928, z: 0.13201082}
-  m_Center: {x: 0, y: 0.09033373, z: 0.0019637942}
+  m_Size: {x: 0.106512785, y: 0.19877928, z: 0.105267525}
+  m_Center: {x: -0.00038945675, y: 0.09033373, z: -0.00026476383}
 --- !u!114 &892684901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52141,6 +52278,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 234343981320441318, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 392365404608299883, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Enabled
@@ -52304,12 +52446,12 @@ PrefabInstance:
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.size
-      value: 6
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Signals.Array.size
-      value: 6
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
@@ -52343,6 +52485,42 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: 'm_Events.m_Signals.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a8e001ae3555ae1499053d4b073dcbb3,
+        type: 2}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'm_Events.m_Signals.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d2a83c20785b99e469e2a12fb75053fd,
+        type: 2}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'm_Events.m_Signals.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 2d0ac33176e63e343ac5808f50d6c360,
+        type: 2}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'm_Events.m_Signals.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a26f6dd10d9badb42aafdf22b089037f,
+        type: 2}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'm_Events.m_Signals.Array.data[10]'
+      value: 
+      objectReference: {fileID: 11400000, guid: ce98af117f7853d4db68c7b87b88436d,
+        type: 2}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'm_Events.m_Signals.Array.data[11]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 9a8135cb4e9055543a29da9b254d5486,
+        type: 2}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -52364,6 +52542,36 @@ PrefabInstance:
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[5].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[6].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[7].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[8].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
@@ -52393,6 +52601,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[7].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[8].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1137094069}
@@ -52414,6 +52657,41 @@ PrefabInstance:
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1137094069}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1137094069}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1137094069}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[7].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1699093018}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[8].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1137094069}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1137094069}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699093018}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1137094069}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
@@ -52443,6 +52721,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[7].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[8].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Disable_Back_Skip
       objectReference: {fileID: 0}
@@ -52465,6 +52778,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Events.m_Events.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play_Activation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Small_Text_To_Empty
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SB_Text_PLacement
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[8].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SB_Text_PLacement
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SB_Text_PLacement
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: END_Of_Scene
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
@@ -52493,6 +52831,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: m_Events.m_Events.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[7].m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[8].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -52516,6 +52889,31 @@ PrefabInstance:
       propertyPath: m_Events.m_Events.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[8].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890272123058103553, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4846332865642819814, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_IsActive
@@ -52526,6 +52924,11 @@ PrefabInstance:
       propertyPath: Camera
       value: 
       objectReference: {fileID: 289571379}
+    - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: M_Menu
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: EARTH_WEB
@@ -52553,6 +52956,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
+      propertyPath: Large_Dialog_Box.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: Small_Dialog_Box.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
       propertyPath: 'Object_sequence.Array.data[0]'
       value: 
       objectReference: {fileID: 892684893}
@@ -52571,6 +52984,52 @@ PrefabInstance:
       propertyPath: 'Object_sequence.Array.data[3]'
       value: 
       objectReference: {fileID: 892684892}
+    - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'Large_Dialog_Box.Array.data[0]'
+      value: Collecting your sample into the proper bottle type is another important
+        aspect of good sampling protocol.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'Large_Dialog_Box.Array.data[1]'
+      value: "Your laboratory can provide the proper sample bottles for the analyses
+        that you request. Another way to determine proper bottle type is to consult
+        the US EPA\u2019s \u201CMethods for Chemical Analyses of Water and Wastes\u201D
+        or \u201CStandard Methods for the Examination of Water and Wastewater"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'Large_Dialog_Box.Array.data[2]'
+      value: Each of these references has tables showing bottle type, amount of sample
+        required, preservation requirements, and holding time for each analysis parameter.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'Large_Dialog_Box.Array.data[3]'
+      value: Click on the amber bottle to learn more about it
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'Large_Dialog_Box.Array.data[4]'
+      value: Amber bottles are required to protect samples that could be degraded
+        by sunlight. Amber bottles may be either glass or plastic.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'Small_Dialog_Box.Array.data[0]'
+      value: Click on the amber bottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'Small_Dialog_Box.Array.data[1]'
+      value: Click on the plastic bottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: 'Small_Dialog_Box.Array.data[2]'
+      value: Click on the glass bottle
+      objectReference: {fileID: 0}
     - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: Timeline_Checkpoints.Array.size
@@ -52611,6 +53070,11 @@ PrefabInstance:
       propertyPath: m_Colors.m_DisabledColor.r
       value: 0.6509804
       objectReference: {fileID: 0}
+    - target: {fileID: 9157334201821225282, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -52647,12 +53111,6 @@ MonoBehaviour:
 --- !u!1 &1137094070 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2459484185778679755, guid: 331ed49b887952e4781a280f919293bd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1137094067}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1137094071 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3216605984777905139, guid: 331ed49b887952e4781a280f919293bd,
     type: 3}
   m_PrefabInstance: {fileID: 1137094067}
   m_PrefabAsset: {fileID: 0}
@@ -53382,6 +53840,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ad7c66e410e44ec488304e429ed6388c,
     type: 3}
   m_PrefabInstance: {fileID: 1363999120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1381446707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3216605984777905139, guid: 331ed49b887952e4781a280f919293bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1137094067}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1398539574
 GameObject:

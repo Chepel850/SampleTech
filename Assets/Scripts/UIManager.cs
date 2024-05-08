@@ -103,14 +103,31 @@ public class UIManager : MonoBehaviour
 
     /*public Vector2 Text_Box_Original_location;
     public Vector2 Text_Box_Top_location;*/
-
+    //-------------------------------------------
     [SerializeField]
     GameObject Foward_Dummy;
     [SerializeField]
     GameObject Back_Skip_Dummy;
-
+    //------------------------------------------
     public string EARTH_WEB;
+    //-----------------------------------------
 
+    
+    public string Coll_Sub;
+
+    public string UN_Coll_Sub;
+
+    [SerializeField]
+    [TextArea]
+    public List<string> Large_Dialog_Box;
+
+    [SerializeField]
+    [TextArea]
+    public List<string> Small_Dialog_Box;
+
+    public int Text_Counter = 0;
+    public int Small_Text_Count = 0;
+     
     void Start()
     {
         OBJ_Max = Object_sequence.Length - 1;
@@ -147,6 +164,22 @@ public class UIManager : MonoBehaviour
 
     }
 
+    public void SB_Text_PLacement()
+    {
+        if (Small_Text_Count >= 0)
+        {
+            Small_text.GetComponent<TMP_Text>().text = Small_Dialog_Box[Small_Text_Count].ToString();
+        }
+        if (Text_Counter >= 0)
+        {
+            Big_Text.GetComponent<TMP_Text>().text = Large_Dialog_Box[Text_Counter].ToString();
+        }
+    }
+
+    public void Small_Text_To_Empty()
+    {
+        Small_text.GetComponent<TMP_Text>().text = "";
+    }
     public void Close_Captioning_Button()
     {
         Close_Captioning = !Close_Captioning;
@@ -207,6 +240,8 @@ public class UIManager : MonoBehaviour
 
             Object_num = OBJ_Min;
 
+            Play_Button.transform.GetComponent<Button>().interactable = true;
+
          }
          else Back_Button.transform.GetComponent<Button>().interactable = true;
 
@@ -238,7 +273,7 @@ public class UIManager : MonoBehaviour
         else
         {
             simText.fontSize = 24;
-            Big_text_Sim.fontSize = 36;
+            Big_text_Sim.fontSize = 30;
         }
 
 
@@ -303,6 +338,7 @@ public class UIManager : MonoBehaviour
 
     public void Menu_NO()
     {
+        M_Menu = false;
         Menu_Block.SetActive(false);
     }
 
@@ -331,6 +367,10 @@ public class UIManager : MonoBehaviour
             //Back_Button.transform.GetComponent<Button>().interactable = true;
 
             Skip_Button_Num++;
+
+            Text_Counter++;
+
+            Small_Text_Count++;
 
             //Object_num++;
 
@@ -362,6 +402,10 @@ public class UIManager : MonoBehaviour
                 Skip_Button_Num--;
 
                 Object_num = Object_num - 2;
+
+                Text_Counter--;
+
+                Small_Text_Count--;
 
                 Scene_Timeline.playableGraph.GetRootPlayable(0).SetTime(Timeline_Checkpoints[Skip_Button_Num]);
             }
@@ -403,5 +447,12 @@ public class UIManager : MonoBehaviour
     {
 
         Play_Button.GetComponent<Button>().interactable = true;
+    }
+
+    public void END_Of_Scene()
+    {
+        Scene_Timeline.playableGraph.GetRootPlayable(0).SetSpeed(0);
+        M_Menu = true;
+        Menu_Block.SetActive(true);
     }
 }
