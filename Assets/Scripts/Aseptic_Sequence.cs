@@ -23,6 +23,9 @@ public class Aseptic_Sequence : MonoBehaviour
     [SerializeField]
     GameObject Bottle_Lid;
 
+    [SerializeField]
+    GameObject Just_Bottle;
+
 
     public void Spray_Bottle_Highlight()
     {
@@ -59,5 +62,11 @@ public class Aseptic_Sequence : MonoBehaviour
     {
         Bottle_Lid.GetComponent<Outline>().enabled = true;
         Bottle_Lid.GetComponent <Collider>().enabled = true;
+    }
+
+    public void Just_Bottle_Highlight()
+    {
+        Just_Bottle.GetComponent<Outline>().enabled = true;
+        Just_Bottle.GetComponent <Collider>().enabled = true;
     }
 }

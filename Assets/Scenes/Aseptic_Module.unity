@@ -7870,6 +7870,7 @@ GameObject:
   - component: {fileID: 267743893}
   - component: {fileID: 267743894}
   - component: {fileID: 267743895}
+  - component: {fileID: 267743896}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7974,7 +7975,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -8128,6 +8129,23 @@ MonoBehaviour:
   cam: {fileID: 267743890}
   Sample_Tech_Timeline: {fileID: 1075463102}
   Tl_Counter: {fileID: 788033667}
+--- !u!114 &267743896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267743888}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 75ff2e1e4cd82db4780588a76be8143b, type: 2}
 --- !u!1 &295430989
 GameObject:
   m_ObjectHideFlags: 0
@@ -11308,157 +11326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430152b064a2a1b4eaccbff0745dc0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &788118084
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 788118089}
-  - component: {fileID: 788118088}
-  - component: {fileID: 788118086}
-  - component: {fileID: 788118085}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!95 &788118085
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788118084}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &788118086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788118084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
---- !u!20 &788118088
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788118084}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.01
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &788118089
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788118084}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.9659259, z: 0, w: -0.25881895}
-  m_LocalPosition: {x: -2.002, y: 1.701, z: -0.184}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0.2907407, y: -0.000001328094, z: -0.00000000443751}
 --- !u!1001 &874835910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12304,12 +12171,6 @@ PlayableDirector:
     value: {fileID: 398128048}
   - key: {fileID: -69177403436762088, guid: e83220b397bedde4897f629e5c632bf9, type: 2}
     value: {fileID: 425280350}
-  - key: {fileID: 4736559251628741488, guid: e83220b397bedde4897f629e5c632bf9, type: 2}
-    value: {fileID: 788118085}
-  - key: {fileID: -2452031565606839630, guid: e83220b397bedde4897f629e5c632bf9, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -1859590389999720647, guid: e83220b397bedde4897f629e5c632bf9, type: 2}
-    value: {fileID: 788118084}
   - key: {fileID: -7480951909418823616, guid: e83220b397bedde4897f629e5c632bf9, type: 2}
     value: {fileID: 267743888}
   - key: {fileID: 9035435677368542372, guid: e83220b397bedde4897f629e5c632bf9, type: 2}
@@ -12369,6 +12230,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: bcfb589e4488e8f45b8a3a8d0cc45ded, type: 2}
     - {fileID: 11400000, guid: e4f12a0f4a19e3246b50244468e5e2b5, type: 2}
     - {fileID: 11400000, guid: b59e54d1306a49244bd4748667c4a733, type: 2}
+    - {fileID: 11400000, guid: 532a35bec9051ab469f48c93a4e07fd4, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -12482,6 +12344,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1075463105}
+          m_TargetAssemblyTypeName: Aseptic_Sequence, Assembly-CSharp
+          m_MethodName: Just_Bottle_Highlight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1075463105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12500,6 +12376,7 @@ MonoBehaviour:
   Packet: {fileID: 1159126241}
   Cold_Faucet_Handle: {fileID: 153347159}
   Bottle_Lid: {fileID: 1482734622}
+  Just_Bottle: {fileID: 1482734623}
 --- !u!114 &1075463106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12554,9 +12431,9 @@ MonoBehaviour:
     click on the lid to place it back on the sample bottle.
   - Click on the handle to turn off the cold water
   - Click on the aerator to re-attach it to the faucet.
-  - "Fill out the sample bottle label with the date, time, and location of the sample.
-    Be sure to include your name as the sample collector. Fill out the \r chain-of-custody
-    form if you will be sending the sample out to a lab for analysis.\r"
+  - "\rFill out the sample bottle label with the date, time, and location of the
+    sample. Be sure to include your name as the sample collector. Fill out the chain-of-custody
+    form if you will be sending the sample out to a lab for analysis."
   - If an offsite, rather than onsite, analysis will be performed, the sample must
     be refrigerated immediately and stay refrigerated while in transport to the lab.
     Water samples for bacterial analysis must be analyzed within 30 hours of collection
@@ -12573,10 +12450,6 @@ MonoBehaviour:
     for coliform bacteria in water, but it is the most easily performed and the quickest
     way to detect the presence or absence of the bacteria. Let\u2019s get started
     with the analysis."
-  - ' First, we need to disinfect the workspace where we will perform the analysis,
-    using a bleach solution. Without this important step, bacteria on the bench top
-    could contaminate the sample and cause a false positive result. For the purposes
-    of this simulation, tap on the bleach bottle.'
   - Now we are going to perform the analysis by adding the color indicator powder
     to the sample. Take care to have the powder packet readily available as you open
     the sample bottle lid.
@@ -12598,6 +12471,7 @@ MonoBehaviour:
     in the sample, the water will remain clear or show a slight yellow tint.
   - These are the basic steps for in-house analysis of a water sample for the presence
     or absence of coliform bacteria.
+  - 
   - 
   - 
   - 
@@ -12679,7 +12553,7 @@ MonoBehaviour:
   - Click on the aerator.
   - Click on the bleach bottle.
   - Click on the handle.
-  - Click on the handle.
+  - Click on the handle
   - Click on the lid.
   - Click on the sample bottle.
   - Click on the sample bottle.
@@ -14788,7 +14662,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'Object_sequence.Array.data[8]'
       value: 
-      objectReference: {fileID: 1482734625}
+      objectReference: {fileID: 1482734623}
     - target: {fileID: 6307059463813465716, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: 'Object_sequence.Array.data[9]'
@@ -20635,7 +20509,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 267743891}
   - {fileID: 1214386569}
-  - {fileID: 788118089}
   - {fileID: 1757014382}
   - {fileID: 1075463103}
   - {fileID: 21732082}

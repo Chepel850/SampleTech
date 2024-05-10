@@ -127,6 +127,10 @@ public class UIManager : MonoBehaviour
 
     public int Text_Counter = 0;
     public int Small_Text_Count = 0;
+
+    //-----
+    [SerializeField]
+    GameObject End_Block;
      
     void Start()
     {
@@ -452,7 +456,11 @@ public class UIManager : MonoBehaviour
     public void END_Of_Scene()
     {
         Scene_Timeline.playableGraph.GetRootPlayable(0).SetSpeed(0);
-        M_Menu = true;
-        Menu_Block.SetActive(true);
+        End_Block.SetActive(true);
+    }
+
+    public void End_Replay()
+    {
+        //End_Block.SetActive(false) ;
     }
 }
