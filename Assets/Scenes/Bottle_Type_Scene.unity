@@ -449,6 +449,7 @@ GameObject:
   - component: {fileID: 289571381}
   - component: {fileID: 289571383}
   - component: {fileID: 289571384}
+  - component: {fileID: 289571385}
   m_Layer: 0
   m_Name: Main_Camera_BTS
   m_TagString: MainCamera
@@ -568,7 +569,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -707,6 +708,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &289571385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289571377}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 75ff2e1e4cd82db4780588a76be8143b, type: 2}
 --- !u!1 &318965940
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,8 +948,6 @@ PlayableDirector:
     value: {fileID: 356916666}
   - key: {fileID: -7040783815693347960, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
     value: {fileID: 289571383}
-  - key: {fileID: 3877755247442103391, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
-    value: {fileID: 1137094068}
   - key: {fileID: -1453469658234450702, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
     value: {fileID: 892684897}
   - key: {fileID: -2526413275060326398, guid: 8164dffe1aa142e4dab02d86c6fedf47, type: 2}
@@ -1204,14 +1220,14 @@ MonoBehaviour:
   - Click on the amber bottle to learn more about it.
   - Amber bottles are required to protect samples that could be degraded by sunlight.
     Amber bottles may be either glass or plastic.
-  - Click on the plastic bottle to learn more about it
+  - Click on the plastic bottle to learn more about it.
   - Plastic bottles are also commonly used for water and wastewater sampling.
   - Plastic bottles are usually required when collecting samples for metals analysis,
     and can be used for many other analytes not affected by the plastic compounds
     that the bottles are made from.
   - The greater durability of plastic bottles make them an ideal candidate for taking
     into the field.
-  - Click on the glass bottle to learn more about it
+  - Click on the glass bottle to learn more about it.
   - Glass bottles are commonly used for water and wastewater sampling.
   - They are typically used for volatile organic compounds and pesticides, since
     these analytes can be affected by plastic compounds.
@@ -1316,9 +1332,9 @@ MonoBehaviour:
   - 0
   - 0
   Small_Dialog_Box:
-  - Click on the amber bottle
-  - Click on the plastic bottle
-  - Click on the glass bottle
+  - Click on the amber bottle.
+  - Click on the plastic bottle.
+  - Click on the glass bottle.
   - 
   - 
   - 
@@ -2572,6 +2588,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1282645341355902767, guid: a0e6d28891ee07240b3d27c2fda18409,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376168873147286942, guid: a0e6d28891ee07240b3d27c2fda18409,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6115347785361246037, guid: a0e6d28891ee07240b3d27c2fda18409,
         type: 3}
       propertyPath: m_Name
@@ -2581,6 +2607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651487081116469937, guid: a0e6d28891ee07240b3d27c2fda18409,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52919,6 +52950,11 @@ PrefabInstance:
       propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4157649849648482028, guid: 331ed49b887952e4781a280f919293bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4846332865642819814, guid: 331ed49b887952e4781a280f919293bd,
         type: 3}
       propertyPath: m_IsActive
@@ -54071,7 +54107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1468076453
 MonoBehaviour:
   m_ObjectHideFlags: 0

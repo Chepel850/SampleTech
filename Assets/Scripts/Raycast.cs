@@ -74,7 +74,7 @@ public class Raycast : MonoBehaviour
 
         tl_skip_num.Skip_Button_Num  = tl_skip_num.Object_num;
 
-        tl_skip_num.Small_Text_Count = tl_skip_num.Object_num -1;
+        //tl_skip_num.Small_Text_Count = tl_skip_num.Object_num -1;
 
         
 

@@ -12,6 +12,7 @@ using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 using DG.Tweening;
 using System;
+using UnityEngine.Rendering;
 
 
 
@@ -86,7 +87,7 @@ public class UIManager : MonoBehaviour
     private int Font_Counter = 0;
     //-----------------------------------------------------------------------------
 
-    [SerializeField] RectTransform Text_Frame, Small_Box_Tool, TB_Position, Text_Box;
+    [SerializeField] RectTransform Text_Frame, Small_Box_Tool, TB_Position, Text_Box, Big_text_Box;
 
     [SerializeField] GameObject Small_text;
     [SerializeField] GameObject Big_Text;
@@ -100,6 +101,15 @@ public class UIManager : MonoBehaviour
 
     public Vector2 Text_Frame_location;
     public Vector2 Text_Frame_top_location;
+    public Vector2 Big_Text_Top_Location;
+
+    public Vector2 Tool_UI_MAX;
+    public Vector2 Tool_UI_Min;
+
+    public Vector2 Tool_UI_OG_MAX;
+    public Vector2 Tool_UI_OG_MIN;
+
+    public Vector2 Big_text_OG;
 
     /*public Vector2 Text_Box_Original_location;
     public Vector2 Text_Box_Top_location;*/
@@ -134,6 +144,8 @@ public class UIManager : MonoBehaviour
      
     void Start()
     {
+        Scene_Timeline.playableGraph.GetRootPlayable(0).SetSpeed(0);
+
         OBJ_Max = Object_sequence.Length - 1;
         OBJ_Min = 0;
         //----------------------------------------------
@@ -152,6 +164,21 @@ public class UIManager : MonoBehaviour
         Text_Frame_location = new Vector2(1,(float) 0.125127316);
 
         Text_Frame_top_location = new Vector2(1, (float)0.2318369);
+
+        Big_Text_Top_Location = new Vector2 (1, (float)0.221812963);
+
+        Big_text_OG = new Vector2(1,(float)0.01720461);
+
+        Tool_UI_MAX = new Vector2((float)0.676116645, (float)0.307278931);
+
+        Tool_UI_Min = new Vector2((float)0.322883427, (float)0.2318369);
+        //Min Vector2(0.322883427,0.2318369)
+        //Max Vector2(0.676116645,0.307278931)
+        Tool_UI_OG_MAX = new Vector2((float)0.676116645, (float)0.199290469);
+        Tool_UI_OG_MIN = new Vector2((float)0.322883427, (float)0.122290432);
+
+
+
 
         /*if (Object_sequence == null)
         {
@@ -190,17 +217,22 @@ public class UIManager : MonoBehaviour
 
         if (Close_Captioning == true)
         {
-            Small_Box_Tool.DOLocalMove(Tool_UI_Top_location, anim_Length);
+            Small_Box_Tool.DOAnchorMax(Tool_UI_MAX,anim_Length);
+            Small_Box_Tool.DOAnchorMin(Tool_UI_Min, anim_Length);
+
             Text_Frame.DOAnchorMax(Text_Frame_top_location, anim_Length);
-
-
+            Big_text_Box.DOAnchorMax(Big_Text_Top_Location,  anim_Length);
+            
             Small_text.SetActive(false);
             Big_Text.SetActive(true);
         }
         else
         {
-            Small_Box_Tool.DOLocalMove(Original_Small_Tool_UI, anim_Length); 
+            Small_Box_Tool.DOAnchorMax(Tool_UI_OG_MAX, anim_Length);
+            Small_Box_Tool.DOAnchorMin(Tool_UI_OG_MIN, anim_Length);
+
             Text_Frame.DOAnchorMax(Text_Frame_location, anim_Length);
+            Big_text_Box.DOAnchorMax(Big_text_OG, anim_Length);
 
             Small_text.SetActive(true);
             Big_Text.SetActive(false);
@@ -266,18 +298,18 @@ public class UIManager : MonoBehaviour
     {
         if (Font_Counter == 0)
         {
-            simText.fontSize = 12;
-            Big_text_Sim.fontSize = 15;
+            simText.fontSize = 28;
+            Big_text_Sim.fontSize = 28;
         }
         else if (Font_Counter == 1)
         {
-            simText.fontSize = 20;
-            Big_text_Sim.fontSize = 24;
+            simText.fontSize = 30;
+            Big_text_Sim.fontSize = 30;
         }
         else
         {
-            simText.fontSize = 24;
-            Big_text_Sim.fontSize = 30;
+            simText.fontSize =35;
+            Big_text_Sim.fontSize = 35;
         }
 
 
@@ -309,7 +341,8 @@ public class UIManager : MonoBehaviour
 
             Mute_Button.SetActive(true);
 
-            Camera.transform.GetComponent<AudioListener>().enabled = false;
+            //Camera.transform.GetComponent<AudioListener>().enabled = false;
+            Camera.transform.GetComponent<AudioSource>().mute = true;
         }
         else
         {
@@ -317,7 +350,9 @@ public class UIManager : MonoBehaviour
 
             Mute_Button.SetActive(false);
 
-            Camera.transform.GetComponent<AudioListener>().enabled = true;
+            //Camera.transform.GetComponent<AudioListener>().enabled = true;
+
+            Camera.transform.GetComponent<AudioSource>().mute = false;
         }
     }
 
@@ -329,12 +364,14 @@ public class UIManager : MonoBehaviour
         {
             Scene_Timeline.playableGraph.GetRootPlayable(0).SetSpeed(0);
             Menu_Block.SetActive(true);
+            Camera.transform.GetComponent<Volume>().enabled = true;
 
         }
         else
         {
 
             Menu_Block.SetActive(false);
+            Camera.transform.GetComponent<Volume>().enabled = false;
 
         }
 
@@ -343,6 +380,7 @@ public class UIManager : MonoBehaviour
     public void Menu_NO()
     {
         M_Menu = false;
+        Camera.transform.GetComponent<Volume>().enabled = false;
         Menu_Block.SetActive(false);
     }
 
@@ -359,7 +397,12 @@ public class UIManager : MonoBehaviour
 
     public void Skip_Foward()
     {
-       
+        if (Object_num > 0)
+        {
+            Object_sequence[0].transform.GetComponent<Outline>().enabled = false;
+
+            Object_sequence[0].transform.GetComponent<Collider>().enabled = false;
+        }
         Debug.Log("Skip is active");
 
         if (Skip_Button_Num < TL_Max || Skip_Button_Num == -1)
@@ -386,13 +429,32 @@ public class UIManager : MonoBehaviour
 
         }
 
+        for (int i = 0; i < Object_sequence.Length; i++)
+        {
+            if (Object_num == Object_num)
+            {
+                Object_sequence[Object_num].transform.GetComponent<Outline>().enabled = true;
 
-       
+                Object_sequence[Object_num].transform.GetComponent<Collider>().enabled = true;
+            }
+            else Object_sequence[Object_num].transform.GetComponent<Collider>().enabled = false; Object_sequence[Object_num].transform.GetComponent<Outline>().enabled = false;
+
+        }
+
+
+
 
     }
     public void Skip_Back()
     {
         Debug.Log("Skip back is active");
+
+            if (Object_num > 0)
+            {
+                Object_sequence[0].transform.GetComponent<Outline>().enabled = false;
+
+                Object_sequence[0].transform.GetComponent<Collider>().enabled = false;
+            }
 
             if (Skip_Button_Num >= TL_Min)
             {
@@ -400,6 +462,8 @@ public class UIManager : MonoBehaviour
                 Object_sequence[Object_num].transform.GetComponent<Outline>().enabled = false;
 
                 Object_sequence[Object_num].transform.GetComponent<Collider>().enabled = false;
+
+                
 
                 //Foward_Button.transform.GetComponent<Button>().interactable = true;
 
@@ -424,13 +488,30 @@ public class UIManager : MonoBehaviour
             if (Object_num <= 0)
             {
                 Object_num = OBJ_Min;
+
+                Object_sequence[Object_num].transform.GetComponent<Outline>().enabled = false;
+
+                Object_sequence[Object_num].transform.GetComponent<Collider>().enabled = false;
+
+            }
+
+            for (int i = 0; i < Object_sequence.Length; i++)
+            {
+                if (Object_num == Object_num)
+                {
+                    Object_sequence[Object_num].transform.GetComponent<Outline>().enabled = true;
+
+                    Object_sequence[Object_num].transform.GetComponent<Collider>().enabled = true;
+                }
+                else Object_sequence[Object_num].transform.GetComponent<Collider>().enabled = false; Object_sequence[Object_num].transform.GetComponent<Outline>().enabled = false ;
+
             }
 
     }
 
     public void Skip_Activation()
     {
-        Foward_Button.transform.GetComponent<Button>().interactable = true;
+        //Foward_Button.transform.GetComponent<Button>().interactable = true;
 
         Back_Button.transform.GetComponent<Button>().interactable = true;
 
@@ -456,11 +537,21 @@ public class UIManager : MonoBehaviour
     public void END_Of_Scene()
     {
         Scene_Timeline.playableGraph.GetRootPlayable(0).SetSpeed(0);
+
+        Camera.transform.GetComponent<Volume>().enabled = true;
+
         End_Block.SetActive(true);
+        
     }
 
     public void End_Replay()
     {
-        //End_Block.SetActive(false) ;
-    }
+        End_Block.SetActive(false);
+        Camera.transform.GetComponent<Volume>().enabled = false;
+        Scene_Timeline.playableGraph.GetRootPlayable(0).SetTime(0);
+        Scene_Timeline.playableGraph.GetRootPlayable(0).SetSpeed(0);
+        Object_num = 0;
+        Skip_Button_Num = 0;
+
+}
 }
